@@ -2,9 +2,8 @@ import '../../domain.dart';
 
 class GetShortUrlUsecaseImplement implements GetShortUrlUsecase {
   @override
-  Future<ShortUrlEntity> call(String extensiveUrl) {
-    // TODO: implement call
-    throw UnimplementedError();
+  ShortUrlEntity call(String extensiveUrl) {
+    return extensiveUrl.isNotEmpty ? ShortUrlEntity(resultUrl: 'shorturl.com') : ShortUrlEntity(resultUrl: 'Erro');
   }
 
 }
