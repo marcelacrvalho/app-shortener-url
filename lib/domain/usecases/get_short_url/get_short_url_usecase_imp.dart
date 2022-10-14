@@ -1,5 +1,3 @@
-import 'package:url_shortener/domain/repositories/get_short_url_repository.dart';
-
 import '../../domain.dart';
 
 class GetShortUrlUsecaseImplement implements GetShortUrlUsecase {
