@@ -1,5 +1,3 @@
-import '../../domain.dart';
-
 abstract class GetShortUrlUsecase {
-  ShortUrlEntity call(String extensiveUrl);
+  Future call(String extensiveUrl);
 }

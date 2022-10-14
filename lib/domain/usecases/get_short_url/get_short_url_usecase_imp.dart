@@ -1,10 +1,14 @@
+import 'package:url_shortener/domain/repositories/get_short_url_repository.dart';
+
 import '../../domain.dart';
 
 class GetShortUrlUsecaseImplement implements GetShortUrlUsecase {
+  final GetShortUrlRepository _getShortUrlRepository;
+
+  GetShortUrlUsecaseImplement(this._getShortUrlRepository);
+
   @override
-  ShortUrlEntity call(String extensiveUrl) {
-    return extensiveUrl.isNotEmpty
-        ? ShortUrlEntity(resultUrl: 'shorturl.com')
-        : ShortUrlEntity(resultUrl: 'Erro');
+  Future call(String extensiveUrl) async {
+    await _getShortUrlRepository(extensiveUrl);
   }
 }
