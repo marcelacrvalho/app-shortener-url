@@ -1,8 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:url_shortener/domain/entities/short_url_entity.dart';
+import 'package:url_shortener/domain/domain.dart';
 
 main() {
-  ShortUrlEntity shortUrlEntity = ShortUrlEntity(resultUrl: 'www.short.url');
+  ShortUrlEntity shortUrlEntity = ShortUrlEntity(shortenerUrl: 'www.short.url');
   test('Expect ShortUrlEntity is not null', () {
     expect(shortUrlEntity, isNotNull);
   });
