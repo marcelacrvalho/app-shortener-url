@@ -4,7 +4,7 @@ Flutter
 <br>
 Http
 <br>
-GetX
+GetIt
 <br>
 <br>
 <b> METODOLOGIAS E DESIGNS </b>
