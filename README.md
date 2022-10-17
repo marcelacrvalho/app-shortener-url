@@ -15,3 +15,5 @@ Reactive Programming
 <br>
 Singleton
 <br>
+Factory
+<br>
