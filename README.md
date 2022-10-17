@@ -13,3 +13,5 @@ Clean Architecture
 <br>
 Reactive Programming
 <br>
+Singleton
+<br>
